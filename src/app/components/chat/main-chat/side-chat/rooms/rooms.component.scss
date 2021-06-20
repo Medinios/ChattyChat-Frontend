@@ -1,0 +1,27 @@
+.roomsList {
+  margin-top: 2vh;
+
+  h4 {
+    margin: unset;
+    margin-bottom: 1vh;
+    img {
+      width: 10px;
+      cursor: pointer;
+      margin-left: 3px;
+    }
+  }
+  ul {
+    margin: unset;
+    padding: unset;
+    overflow: auto;
+    max-height: 15vh;
+    li {
+      list-style-type: none;
+      cursor: pointer;
+      &.currentRoom {
+        font-weight: bold;
+        color: #d6e7ff;
+      }
+    }
+  }
+}

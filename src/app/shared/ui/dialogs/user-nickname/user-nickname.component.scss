@@ -1,0 +1,17 @@
+::ng-deep .mat-icon {
+  height: 48px !important;
+  width: 48px !important;
+  font-size: 48px !important;
+}
+.sendButton {
+  border: unset;
+  border-radius: 10px;
+  background: #24344b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 1vh;
+  vertical-align: super;
+  min-width: 50px;
+}

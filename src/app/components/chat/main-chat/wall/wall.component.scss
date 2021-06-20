@@ -1,0 +1,14 @@
+.wall-messages {
+  max-height: 90%;
+  min-height: 90%;
+  overflow: auto;
+}
+.history {
+  display: flex;
+  justify-content: space-between;
+  .close {
+    margin-right: 2vh;
+    align-self: center;
+    cursor: pointer;
+  }
+}

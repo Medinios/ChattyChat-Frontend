@@ -1,0 +1,9 @@
+<div class="user-nickname">
+    <h1>Welcome to ChattyChat</h1>
+    <h3>Before we can start , Tell me your name:</h3>
+    <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput [(ngModel)]="username" placeholder="Example: Sam"/>
+    </mat-form-field>
+    <button class="sendButton" (click)="createUser()">Join</button>
+</div>

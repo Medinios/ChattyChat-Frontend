@@ -1,0 +1,6 @@
+<div class="roomsList">
+    <h4>Rooms <img src="assets/images/create.png" (click)="createRoom()" matTooltip="Create new room"></h4>
+    <ul>
+        <li [ngClass]="{'currentRoom': room === currentRoom}" *ngFor="let room of roomsList" (click)="changeRoom(room)"> {{room}} </li>
+    </ul>
+</div>

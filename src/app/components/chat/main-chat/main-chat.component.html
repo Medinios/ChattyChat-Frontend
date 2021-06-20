@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="side-settings">
+        <app-side-chat></app-side-chat>
+    </div>
+    <div class="wall">
+    <app-wall></app-wall>
+    <div class="send-message">
+        <div class="container">
+            <input type="text" [(ngModel)]="message" placeholder="Type your message here" (keyup.enter)="sendMessage()" (keydown)="onKeyDownNotEnter()">
+            <button  (click)="isEmojiPickerVisible = !isEmojiPickerVisible;">😀</button>
+        </div>
+        <button (click)="sendMessage()" class="sendButton">Send</button>
+    </div>
+    <emoji-mart class="emoji-mart" *ngIf="isEmojiPickerVisible" (emojiSelect)="addEmoji($event)" title="Choose your emoji"></emoji-mart>
+    
+    </div>
+</div>

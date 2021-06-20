@@ -1,0 +1,8 @@
+<div class="user-nickname">
+    <h1>Create Room</h1>
+    <mat-form-field appearance="outline">
+        <mat-label>Room Name</mat-label>
+        <input matInput [(ngModel)]="room" placeholder="Example: General"/>
+    </mat-form-field>
+    <button class="sendButton" (click)="createRoom()">Create</button>
+</div>

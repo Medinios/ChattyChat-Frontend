@@ -1,0 +1,58 @@
+.container {
+  display: grid;
+  grid-template-columns: 100% 0%;
+  width: 95%;
+  input[type="text"] {
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    height: 30px;
+    color: #565656;
+  }
+  button {
+    background: transparent;
+    border: 0;
+    transform: translateX(-40px);
+    cursor: pointer;
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 60vh;
+  max-height: 60vh;
+  .side-settings {
+    background-color: #24344b;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 2vh;
+  }
+  .wall {
+    background-color: #f2f7ff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid #e0ecff;
+    min-height: inherit;
+    max-height: inherit;
+  }
+  .send-message {
+    display: flex;
+    gap: 0.5vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+  }
+}
+.sendButton {
+  border: unset;
+  border-radius: 10px;
+  background: #24344b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
