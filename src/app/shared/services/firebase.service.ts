@@ -13,7 +13,7 @@ export class FirebaseService {
         this.firestore
             .collection("messagesHistory")
             .add({history: data , date: Date.now() , username: username})
-            .then(res => {console.log(res);}, err => reject(err));
+            .then(res => {}, err => reject(err));
     });
   }
 

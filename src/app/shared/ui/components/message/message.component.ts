@@ -12,7 +12,6 @@ export class MessageComponent implements OnInit {
   constructor() { 
     if(localStorage.getItem('username')){
     this.currentUser = localStorage.getItem('username') || '';
-    console.log(this.currentUser);
     }
   }
 
